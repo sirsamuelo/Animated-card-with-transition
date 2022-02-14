@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --dark-color: #1D3557;
+    --light-grey-color: #C4C4C4;
+    --red-color: #E63946;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    width: 400px;
+    box-shadow: 5px 5px #edeef0;
+    position: relative;
+    transition: 0.3s;
+}
+.hover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #E63946;
+    z-index: -1;
+    transition: 0.5s;
+}
+.card:hover {
+    margin-bottom: 2rem;
+}
+.card:hover h2, .card:hover i {
+    color: #FFF;
+}
+.card:hover .hover {
+    width: 100%;
+}
+h2 {
+    color: var(--red-color);
+}
+i {
+    font-size: 2rem;
+    color: var(--red-color);
+}
+span {
+    color: var(--light-grey-color);
+    font-weight: 400;
+}
+.card:nth-child(2) .hover {
+    background-color: #e653a6;
+    color: #FFF;
+} 
+.card:nth-child(2) h2, .card:nth-child(2)  i {
+    color: #e653a6;
+}
+.card:nth-child(2):hover h2, .card:nth-child(2):hover i {
+    color: #FFF;
+}
+
+.card:nth-child(3) .hover {
+    background-color: blue;
+    color: #FFF;
+} 
+.card:nth-child(3) h2, .card:nth-child(3) i {
+    color: blue;
+}
+.card:nth-child(3):hover h2, .card:nth-child(3):hover i {
+    color: #FFF;
+}
